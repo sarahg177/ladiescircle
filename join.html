@@ -1,0 +1,209 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Join Ladies Circle</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="stylesheet" href="https://use.typekit.net/wyb2fja.css">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <style>
+    @import url("https://use.typekit.net/wyb2fja.css");
+  </style>
+
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--Fontawesome-->
+        <link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+    <!--Emailjs-->
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_2HpQKsDijwiP6PmQ5h1sY");
+        })();
+    </script>
+
+</head>
+<body>
+<div class="mainpage">
+<!--Navigation-->
+<nav class="nav-bar">
+
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo"><img class="white_logo" src="images/white_full_logo.png" alt="Ladies Circle Logo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="nav" href="index.html">Home</a></li>
+        <li><a class="nav" href="about.html">About Us</a></li>
+        <li><a class="nav" href="join.html">Join Ladies Circle</a></li>
+        <li><a class="nav" href="finder.html">Circle Finder</a></li>
+      </ul>
+    </div>
+
+
+  <ul class="sidenav" id="mobile-demo">
+        <li><a class="nav" href="index.html">Home</a></li>
+        <li><a class="nav" href="about.html">About Us</a></li>
+        <li><a class="nav" href="join.html">Join Ladies Circle</a></li>
+        <li><a class="nav" href="finder.html">Circle Finder</a></li>
+  </ul>
+</nav>
+
+<main>
+
+    <h1 class="statement">Come and join a Ladies Circle near you!</h1>
+<div class="container">
+    <p>If you have a general or membership enquiry, please fill in the form below and we will be in touch as soon as
+        possible. Otherwise see the relevant email addresses below</p>
+</div>
+     <div class="container form_frame">
+        <form class="col s12" onsubmit="return sendMail(this);" method="POST">
+        <div class="row">
+          <div class="input-field col s12"> <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" name="from_name" class="validate" required>
+            <label for="icon_prefix">Your Name</label>
+          </div>
+        </div>
+            <div class="input-field col s12"> <i class="material-icons prefix">computer</i>
+          <input id="icon_computer" type="text" name="from_email" class="validate" required>
+          <label for="icon_computer">E-mail Address</label>
+        </div>
+
+            <div class="row">
+          <div class="input-field col s12"> <i class="material-icons prefix">local_phone</i>
+            <input id="icon_phone" type="text" name="telephone" class="validate" required>
+            <label for="icon_phone">Contact Telephone Number</label>
+          </div>
+        </div>
+
+            <div class="row">
+          <div class="input-field col s12"> <i class="material-icons prefix">today</i>
+            <input id="dob" type="text" name="dob" class="validate" required>
+            <label for="dob">Year Of Birth</label>
+          </div>
+        </div>
+
+            <div class="row">
+          <div class="input-field col s12"> <i class="material-icons prefix">email</i>
+            <input id="town" type="text" name="town" class="validate" required>
+            <label for="town">Town</label>
+          </div>
+        </div>
+
+
+        <div class="row">
+            <div class="input-field col s12"> <i class="material-icons prefix">email</i>
+                <input id="county" type="text" name="county" class="validate" required>
+                <label for="county">County</label>
+            </div>
+        </div>
+            <div class="row">
+                <div class="input-field col s12"><i class="material-icons prefix">question_answer</i>
+                    <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="friend">Friend</option>
+                        <option value="social_media">Social Media</option>
+                        <option value="circler">Circler Magazine</option>
+                        <option value="other_paper">Other newspaper or magazine</option>
+                        <option value="event">Event</option>
+                        <option value="search_engine">Search Engine</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label>How did you hear about us?</label>
+                </div>
+            </div>
+
+      <div class="row">
+        <div class="input-field col s12"><i class="material-icons prefix">create</i>
+          <textarea id="textarea1" name="message" class="materialize-textarea"></textarea>
+          <label for="textarea1">Message</label>
+        </div>
+			</div>
+
+      <button class="btn waves-effect waves-light btn_sm" type="submit" name="action">Submit </button>
+	</form>
+     </div>
+
+</main>
+
+<footer>
+    <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center social-links">
+          <li class="list-inline-item"> <a class="social_links" href="https://www.facebook.com/ladiescircle.media"> <span class="fa-stack fa-3x"> <i class="fab fa-facebook-square"></i> </span> </a> </li>
+          <li class="list-inline-item"> <a class="social_links" href="https://twitter.com/LadiesCircleGBI"> <span class="fa-stack fa-3x"> <i class="fab fa-twitter-square"></i> </span> </a> </li>
+          <li class="list-inline-item"> <a class="social_links" href="https://www.instagram.com/ladiescirclegbi/"> <span class="fa-stack fa-3x"> <i class="fab fa-instagram-square"></i> </span> </a> </li>
+            <li class="list-inline-item"> <a class="social_links" href="https://www.youtube.com/channel/UCYJiBHYr3k55R5ZN4GBX4Qg"> <span class="fa-stack fa-3x"> <i class="fab fa-youtube-square"></i> </span> </a> </li>
+        </ul>
+
+          <p class="design">Website designed and developed by <a href="https://www.griggsdesign.co.uk">Sarah Griggs</a> </p>
+          <p class="copyright text-muted">Copyright &copy;<a href="https://www.griggsdesign.co.uk"> Griggs Design 2020</a></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</div>
+<!-- jQuery before materialize.js -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <!--JavaScript at end of body for optimized loading-->
+     <!-- <script type="text/javascript" src="assets/js/materialize.min.js"></script>-->
+
+<!-- Emailjs script-->
+<script src="js/sendEmail.js"></script>
+
+<!--form select and sidenav-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('select').formSelect();
+        $('.sidenav').sidenav();
+    });
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174184806-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174184806-1');
+</script>
+
+ <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

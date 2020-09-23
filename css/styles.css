@@ -11,12 +11,20 @@ body {
     background-size: 100%;
     height: 31vw;
 }
+.history li {
+    list-style-type: circle;
+}
 
 .logo {
     position: absolute;
     bottom: 0;
     right: 1vw;
     z-index: 1;
+}
+
+.history_logo {
+  width: 200px;
+  height: auto;
 }
 
 .nav-bar {
@@ -63,10 +71,6 @@ a {
     padding-bottom: 20px;
 }
 
-.history {
-
-}
-
 .quote {
     height: 100px;
     width: 100px;
@@ -88,9 +92,11 @@ a {
     text-align: center;
 }
 
-h1 {
-    text-align: center;
+h2 {
+  text-align: center;
+  color: #1fbeca;
 }
+
 
 .design{
     text-align: center;
@@ -184,9 +190,6 @@ img {vertical-align: middle;}
     margin-left: auto;
 }
 
-.history li {
-    list-style-type: circle;
-}
 
 .sidebox {
   height:300px;

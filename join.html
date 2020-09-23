@@ -78,89 +78,110 @@
 </nav>
 
 <main>
-  <div class="ladies"></div>
-
-    <h1 class="statement">Come and join a Ladies Circle near you!</h1>
-<div class="container">
-    <p>If you have a general or membership enquiry, please fill in the form below and we will be in touch as soon as
+  <div class="ladies">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12">
+        <h2 class="statement">Come and join a Ladies Circle near you!</h2>
+        <p>If you have a general or membership enquiry, please fill in the form below and we will be in touch as soon as
         possible. Otherwise see the relevant email addresses below</p>
-</div>
-<div class="container form_frame">
-  <h5>Press Enquiries</h5>
-  <p>Please contact our <a href="mailto:media@ladiescircle.co.uk?subject=Media%20Enquiry%20from%20Website">media officer</a> </p>
 
-  <h5>International Enquiries </h5>
-  <p>Please contact our <a href="mailto:vicepresident@ladiescircle.co.uk?subject=Website%20enquiry">Vice President</a> with any international enquiries</p>
+        <div class="form_frame">
+          <h5>Press Enquiries</h5>
+          <p>Please contact our <a href="mailto:media@ladiescircle.co.uk?subject=Media%20Enquiry%20from%20Website">media officer</a> </p>
 
-  <h5>General or Membership Enquiries</h5>
-  <p>Please fill out this form then click submit button.</p>
+          <h5>International Enquiries </h5>
+          <p>Please contact our <a href="mailto:vicepresident@ladiescircle.co.uk?subject=Website%20enquiry">Vice President</a> with any international enquiries</p>
 
-        <form class="col s12" onsubmit="return sendMail(this);" method="POST">
-        <div class="row">
-          <div class="input-field col s12"> <i class="material-icons prefix">account_circle</i>
-            <input id="icon_prefix" type="text" name="from_name" class="validate" required>
-            <label for="icon_prefix">Your Name</label>
-          </div>
-        </div>
+          <h5>General or Membership Enquiries</h5>
+          <p>Please fill out this form then click submit button.</p>
+
+          <form class="col s12" onsubmit="return sendMail(this);" method="POST">
+            <div class="row">
+              <div class="input-field col s12"> <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" name="from_name" class="validate" required>
+                <label for="icon_prefix">Your Name</label>
+              </div>
+            </div>
             <div class="input-field col s12"> <i class="material-icons prefix">computer</i>
-          <input id="icon_computer" type="text" name="from_email" class="validate" required>
-          <label for="icon_computer">E-mail Address</label>
-        </div>
-
+              <input id="icon_computer" type="text" name="from_email" class="validate" required>
+              <label for="icon_computer">E-mail Address</label>
+            </div>
             <div class="row">
-          <div class="input-field col s12"> <i class="material-icons prefix">local_phone</i>
-            <input id="icon_phone" type="text" name="telephone" class="validate" required>
-            <label for="icon_phone">Contact Telephone Number</label>
-          </div>
-        </div>
-
+              <div class="input-field col s12"> <i class="material-icons prefix">local_phone</i>
+                <input id="icon_phone" type="text" name="telephone" class="validate" required>
+                <label for="icon_phone">Contact Telephone Number</label>
+              </div>
+            </div>
             <div class="row">
-          <div class="input-field col s12"> <i class="material-icons prefix">today</i>
-            <input id="dob" type="text" name="dob" class="validate" required>
-            <label for="dob">Year Of Birth</label>
-          </div>
-        </div>
-
+              <div class="input-field col s12"> <i class="material-icons prefix">today</i>
+                <input id="dob" type="text" name="dob" class="validate" required>
+                <label for="dob">Year Of Birth</label>
+              </div>
+            </div>
             <div class="row">
-          <div class="input-field col s12"> <i class="material-icons prefix">email</i>
-            <input id="town" type="text" name="town" class="validate" required>
-            <label for="town">Town</label>
-          </div>
-        </div>
-
-
-        <div class="row">
-            <div class="input-field col s12"> <i class="material-icons prefix">email</i>
+              <div class="input-field col s12"> <i class="material-icons prefix">email</i>
+                <input id="town" type="text" name="town" class="validate" required>
+                <label for="town">Town</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12"> <i class="material-icons prefix">email</i>
                 <input id="county" type="text" name="county" class="validate" required>
                 <label for="county">County</label>
+              </div>
             </div>
-        </div>
             <div class="row">
-                <div class="input-field col s12"><i class="material-icons prefix">question_answer</i>
-                    <select>
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="friend">Friend</option>
-                        <option value="social_media">Social Media</option>
-                        <option value="circler">Circler Magazine</option>
-                        <option value="other_paper">Other newspaper or magazine</option>
-                        <option value="event">Event</option>
-                        <option value="search_engine">Search Engine</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <label>How did you hear about us?</label>
-                </div>
+              <div class="input-field col s12"><i class="material-icons prefix">question_answer</i>
+                <select>
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="friend">Friend</option>
+                  <option value="social_media">Social Media</option>
+                  <option value="circler">Circler Magazine</option>
+                  <option value="other_paper">Other newspaper or magazine</option>
+                  <option value="event">Event</option>
+                  <option value="search_engine">Search Engine</option>
+                  <option value="other">Other</option>
+                </select>
+                <label>How did you hear about us?</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12"><i class="material-icons prefix">create</i>
+                <textarea id="textarea1" name="message" class="materialize-textarea"></textarea>
+                <label for="textarea1">Message</label>
+              </div>
             </div>
 
-      <div class="row">
-        <div class="input-field col s12"><i class="material-icons prefix">create</i>
-          <textarea id="textarea1" name="message" class="materialize-textarea"></textarea>
-          <label for="textarea1">Message</label>
+            <button class="btn waves-effect waves-light btn_sm" type="submit" name="action">Submit </button>
+          </form>
         </div>
-			</div>
-
-      <button class="btn waves-effect waves-light btn_sm" type="submit" name="action">Submit </button>
-	</form>
-     </div>
+      </div>
+        <!--Side boxes-->
+        <div class="col-lg-4 col-md-4 mx-auto">
+          <div class="find_out_more">
+            <a href="about.html">
+              <img src="images/searching_magnify.png" class="sidebox">
+            </a>
+            <a class="waves-effect waves-light btn sidebox_btn" href="about.html">FIND OUT MORE <i class="far fa-question-circle"></i></a>
+          </div>
+          <div class="circle_finder">
+            <a href="finder.html">
+              <img src="images/map.png" class="sidebox">
+            </a>
+            <a class="waves-effect waves-light btn sidebox_btn" href="finder.html">IS THERE A CIRCLE NEAR YOU? <i class="fas fa-search-location"></i></a>
+          </div>
+          <div class="join_us">
+            <a href="join.html">
+              <img src="images/join.png" class="sidebox">
+            </a>
+            <a class="waves-effect waves-light btn sidebox_btn" href="finder.html">COME AND JOIN US <i class="fas fa-glass-cheers"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--end of side boxes -->
 
 </main>
 

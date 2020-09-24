@@ -83,7 +83,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-8 col-sm-12">
-        <h2 class="statement">Come and join a Ladies Circle near you!</h2>
+        <h3 class="statement">Come and join a Ladies Circle near you!</h3>
         <p>If you have a general or membership enquiry, please fill in the form below and we will be in touch as soon as
         possible. Otherwise see the relevant email addresses below</p>
 
@@ -97,7 +97,7 @@
           <h5>General or Membership Enquiries</h5>
           <p>Please fill out this form then click submit button.</p>
 
-          <form class="col s12" onsubmit="return sendMail(this);" method="POST">
+          <form class="col s12" onsubmit="return sendMail(this);" method="POST" action="/thanks.html" target="_parent">
             <div class="row">
               <div class="input-field col s12"> <i class="material-icons prefix">account_circle</i>
                 <input id="icon_prefix" type="text" name="from_name" class="validate" required>
@@ -134,7 +134,7 @@
             </div>
             <div class="row">
               <div class="input-field col s12"><i class="material-icons prefix">question_answer</i>
-                <select>
+                <select name="hear" id="hear">
                   <option value="" disabled selected>Choose your option</option>
                   <option value="friend">Friend</option>
                   <option value="social_media">Social Media</option>

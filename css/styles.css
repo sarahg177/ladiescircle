@@ -2,14 +2,14 @@ body {
     font-family: century gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: large;
+    font-size: medium;
 }
 
 .ladies {
     background-image: url(../images/ladies.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 31vw;
+    height: 28vw;
 }
 .history li {
     list-style-type: circle;
@@ -92,7 +92,7 @@ a {
     text-align: center;
 }
 
-h2 {
+h3 {
   text-align: center;
   color: #1fbeca;
 }
@@ -128,11 +128,9 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
   position: relative;
   margin: auto;
-    height: 690px;
-
+  width: 100%
 }
 
 /* Number text (1/3 etc) */
@@ -211,4 +209,16 @@ img {vertical-align: middle;}
 
 .join_us {
   padding: 20px;
+}
+
+.quote {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
 }

@@ -104,6 +104,10 @@ nav ul a {
   padding: 20px;
 }
 
+.get_involved {
+  padding: 20px;
+}
+
 /*------------End of Sidebox Styling------*/
 
 /*-----Home Page-------*/
@@ -130,6 +134,11 @@ nav ul a {
   color: #1fbeca;
   text-align: center;
   padding-top: 10px;
+}
+
+.social_handle {
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 /*-------------Slide show Styling-----------*/
@@ -290,6 +299,7 @@ img {vertical-align: middle;}
 
   .sidebox_btn {
     width:238.58px;
+    font-size: 11px;
   }
 
   /*-----Desktop History Page------*/

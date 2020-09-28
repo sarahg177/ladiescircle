@@ -152,7 +152,8 @@ img {vertical-align: middle;}
 .slideshow-container {
   position: relative;
   margin: auto;
-  width: 100%
+  width: 100%;
+  height: 320px
 }
 
 /* Number text (1/3 etc) */
@@ -279,7 +280,15 @@ img {vertical-align: middle;}
     margin-left: inherit;
   }
 
+  /*-------Tablet Main Page-------*/
+
+  /* Slideshow container */
+.slideshow-container {
+  height: 370px
+}
+
   /*-----Tablet Hisotry Page------*/
+
   .history_logo {
     width: 150px;
     height: auto;
@@ -302,10 +311,29 @@ img {vertical-align: middle;}
     font-size: 11px;
   }
 
+   /*-------Desktop Main Page-------*/
+
+  /* Slideshow container */
+.slideshow-container {
+  height: 435px
+}
+
   /*-----Desktop History Page------*/
 
   .history_logo {
     width: 170px;
+  }
+
+}
+
+@media (min-width: 1366px) {
+
+   /*------- Main Page-------*/
+
+  /* Slideshow container */
+
+  .slideshow-container {
+    height: 888px
   }
 
 }

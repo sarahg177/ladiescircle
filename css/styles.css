@@ -161,7 +161,7 @@ img {vertical-align: middle;}
   background-color: #1fbeca;
   width: 100%;
   color: #f2f2f2;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   padding: 8px 12px;
   position: absolute;
@@ -289,6 +289,10 @@ img {vertical-align: middle;}
   /* Slideshow container */
 .slideshow-container {
   height: 370px
+}
+
+.numbertext {
+  font-size: 16px;
 }
 
   /*-----Tablet Hisotry Page------*/

@@ -313,7 +313,7 @@ We hope you’ll help us build on our history, and we put everything we’ve lea
                       <a href="join.html">
                         <img src="images/join.png" class="sidebox">
                       </a>
-                      <a class="waves-effect waves-light btn sidebox_btn" href="join.html">COME AND JOIN US <i class="fas fa-glass-cheers"></i></a>
+                      <a class="waves-effect waves-light btn sidebox_btn" href="join.html">CONTACT US <i class="fas fa-envelope-open-text"></i></a>
                     </div>
                     <div class="get_involved">
               <a href="">
@@ -345,6 +345,9 @@ We hope you’ll help us build on our history, and we put everything we’ve lea
                 </div>
             </footer>
             </div>
+
+            <!-- jQuery before materialize.js -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
              <!--JavaScript at end of body for optimized loading-->
                   <script type="text/javascript" src="js/materialize.min.js"></script>
 
@@ -353,6 +356,11 @@ We hope you’ll help us build on our history, and we put everything we’ve lea
                 document.addEventListener('DOMContentLoaded', function() {
                 var elems = document.querySelectorAll('.sidenav');
                 var instances = M.Sidenav.init(elems, options);
+              });
+            </script>
+            <script>
+              $(document).ready(function(){
+                $('.sidenav').sidenav();
               });
             </script>
 

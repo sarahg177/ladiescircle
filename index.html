@@ -21,18 +21,13 @@
     @import url("https://use.typekit.net/wyb2fja.css");
   </style>
 
-  <!--Bootstrap CSS-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
   <!-- Bootstrap CSS -->
   <link href="bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
   <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -43,7 +38,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
@@ -325,7 +319,7 @@
               <a href="join.html">
                 <img src="images/join.png" class="sidebox">
               </a>
-              <a class="waves-effect waves-light btn sidebox_btn" href="join.html">COME AND JOIN US <i class="fas fa-glass-cheers"></i></a>
+              <a class="waves-effect waves-light btn sidebox_btn" href="join.html">CONTACT US <i class="fas fa-envelope-open-text"></i></a>
             </div>
              <div class="get_involved">
               <a href="">
@@ -394,17 +388,13 @@
     </footer>
     </div>
 
+
 <!-- jQuery before materialize.js -->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="js/materialize.min.js"></script>
 
-    <script type="text/javascript" src="bootstrap-4/js/bootstrap.js"></script>
 
-    <!--Bootstrap Javascript-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--mobile navbar collapse-->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -445,6 +435,12 @@ function showSlides() {
   gtag('js', new Date());
 
   gtag('config', 'UA-174184806-1');
+</script>
+
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
 </script>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

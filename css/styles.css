@@ -90,6 +90,7 @@ nav ul a {
 
 .sidebox_btn {
   display: none;
+    font-size: 10px;
 }
 
 .find_out_more {
@@ -282,6 +283,7 @@ img {vertical-align: middle;}
   .sidebox_btn {
     width:208.75px;
     margin-left: inherit;
+    font-size: 10px;
   }
 
   /*-------Tablet Main Page-------*/
@@ -316,7 +318,6 @@ img {vertical-align: middle;}
 
   .sidebox_btn {
     width:238.58px;
-    font-size: 11px;
   }
 
    /*-------Desktop Main Page-------*/

@@ -143,6 +143,17 @@ nav ul a {
   padding-bottom: 10px;
 }
 
+.fun {
+  background-color: #1fbeca;
+  width: 100%;
+  color: #f2f2f2;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 12px;
+  position: relative;
+  top: 0;
+}
+
 /*-------------Slide show Styling-----------*/
 
 * {box-sizing: border-box;}
@@ -160,11 +171,9 @@ img {vertical-align: middle;}
 
 /* Number text (1/3 etc) */
 .numbertext {
-  background-color: #1fbeca;
   width: 100%;
   color: #f2f2f2;
   font-size: 14px;
-  text-align: center;
   padding: 8px 12px;
   position: absolute;
   top: 0;
